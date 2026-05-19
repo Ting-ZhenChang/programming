@@ -1,111 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ting-Zhen Chang - Competition Experience</title>
-  <style>
+<meta charset="UTF-8">
+<title>Ting-Chen Chang Resume</title>
+
+<style>
+/* ===== A4 PAGE SETTING ===== */
+@page {
+    size: A4;
+    margin: 18mm;
+}
+
+body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: auto;
+    background: white;
+    color: #222;
+    font-family: "Times New Roman", serif;
+    line-height: 1.5;
+    font-size: 12pt;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.contact {
+    margin-top: 6px;
+    font-size: 11pt;
+}
+
+.contact a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* ===== SECTION ===== */
+.section {
+    margin-top: 24px;
+}
+
+.section-title {
+    font-size: 15pt;
+    font-weight: bold;
+    border-bottom: 1.5px solid #444;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* ===== EDUCATION ===== */
+.edu-item {
+    margin-bottom: 12px;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.edu-sub {
+    margin-top: 2px;
+}
+
+/* ===== EXPERIENCE ===== */
+.exp-item {
+    margin-bottom: 18px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.exp-role {
+    font-style: italic;
+    margin-top: 2px;
+}
+
+ul {
+    margin-top: 8px;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* ===== SKILLS ===== */
+.skills p {
+    margin: 6px 0;
+}
+
+/* ===== LINKS ===== */
+.links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== PRINT ===== */
+@media print {
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background: #fafafa;
-      color: #333;
+        margin: 0;
+        box-shadow: none;
     }
-    h1 {
-      color: #000;
-    }
-    h2 {
-      margin-top: 30px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-    }
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      list-style: square;
-      margin-left: 20px;
-    }
-    img {
-      max-width: 600px;
-      margin: 15px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-    .reflection {
-      font-style: italic;
-      color: #555;
-      margin-top: 10px;
-    }
-  </style>
+}
+</style>
 </head>
+
 <body>
-  <h1>Ting-Zhen Chang</h1>
-  <p><strong>Email:</strong> s1112463@yzu.edu.tw</p>
 
-  <h2>Introduction</h2>
-  <p>
-    I am currently an undergraduate student at Yuan Ze University, studying Computer Science. 
-    My interests include data structures, algorithms, software development, and quantitative finance competitions.
-  </p>
+<!-- ===== HEADER ===== -->
+<div class="header">
+    <h1>TING-CHEN CHANG</h1>
 
-  <h2>修課經歷</h2>
-  <p>
-    Econometrics:A+
-  </p>
-  <p>
-    linear algebra:A
-  </p>
-  <p>
-    linear algebra:A
-  </p>
+    <div class="contact">
+        (+886) 983776586 |
+        <a href="mailto:Sofe231436935@gmail.com">
+            Sofe231436935@gmail.com
+        </a>
+    </div>
+
+    <div class="contact links">
+        <a href="https://github.com/yourname" target="_blank">
+            GitHub
+        </a>
+        |
+        <a href="https://linkedin.com/in/yourname" target="_blank">
+            LinkedIn
+        </a>
+    </div>
+</div>
+
+<!-- ===== SUMMARY ===== -->
+<div class="section">
+    <div class="section-title">SUMMARY</div>
+
     <p>
-    financial analysis software:A
-  </p>
-  
-  <h2>Competition Experience</h2>
-  <p>Here I share some of my experiences from academic competitions and related projects:</p>
-  <ul>
-    <li><strong>WorldQuant Challenge</strong><br>
-      Participated in quantitative research competition using WorldQuant Brain.  
-      <p>
-        In WorldQuant Brain, I designed and tested several small alphas (ideas) using data transformations and ranking logic.
-        These alphas aimed to capture short-term momentum and long-term mean-reversion signals.
-      </p>
-      <p class="reflection">
-        Reflection: Through this platform, I realized the importance of systematic thinking in quantitative research.  
-        Trial and error with many alpha ideas helped me better understand feature engineering, backtesting, and portfolio diversification.
-      </p>
-      <a href="https://www.worldquant.com/brain/" target="_blank">Visit WorldQuant Brain</a>
-    </li>
-  </ul>
+        With experience in WorldQuant BRAIN and business competitions,
+        I thrive on solving problems and working with teams.
+        I've mastered courses from management to operating systems and
+        computer organization, proving my versatility across disciplines.
+        Motivated by innovation, I combine finance insight with engineering
+        skills to deliver impactful results.
+    </p>
+</div>
 
-  <h2>Side Projects</h2>
-  <p>大三 side project</p>
-  <ul>
-    <li><strong>C++ Coursework</strong><br>
-      Completed assignments involving data structures (linked lists, stacks, graphs) and memory management in C++.  
-      <p>
-        I practiced pointer operations, object-oriented programming, and problem-solving skills through homework projects.  
-        These experiences enhanced my debugging ability and deepened my understanding of algorithm complexity.
-      </p>
-      <p class="reflection">
-        Reflection: The C++ course was challenging at first, but it provided me with a solid foundation in low-level programming concepts.  
-        It also made me more confident in approaching real-world software projects.
-      </p>
-      <a href="https://github.com/yourname/Cpp-Assignments">View Repository</a>
-    </li>
-  </ul>
+<!-- ===== EDUCATION ===== -->
+<div class="section">
+    <div class="section-title">EDUCATION</div>
 
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:s1112463@yzu.edu.tw">s1112463@yzu.edu.tw</a>
-  </p>
+    <div class="edu-item">
+        <div class="edu-header">
+            <span>Yuan Ze University</span>
+            <span>Sep 2023 — Jun 2027</span>
+        </div>
+
+        <div class="edu-sub">
+            B.S. in Finance and Computer Science (Double Major)
+            | GPA: 3.6/4.0
+        </div>
+    </div>
+</div>
+
+<!-- ===== EXPERIENCE ===== -->
+<div class="section">
+    <div class="section-title">RELEVANT EXPERIENCE</div>
+
+    <div class="exp-item">
+
+        <div class="exp-header">
+            <span>WorldQuant BRAIN</span>
+            <span>Apr 2025 — Jun 2025</span>
+        </div>
+
+        <div class="exp-role">
+            Quantitative Finance
+        </div>
+
+        <ul>
+            <li>
+                Built and tested 100+ alphas on WorldQuant BRAIN,
+                advancing to Stage 2 by integrating proprietary language
+                with Python for enhanced modeling.
+            </li>
+
+            <li>
+                Developed strong problem-solving and team collaboration
+                skills through iterative modeling and competition-style
+                challenges.
+            </li>
+
+            <li>
+                Applied cross-disciplinary knowledge from management
+                studies and computer science courses (Algorithms and
+                Data Structures) to enhance analytical and technical
+                approaches.
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- ===== SKILLS ===== -->
+<div class="section skills">
+    <div class="section-title">SKILLS</div>
+
+    <p>
+        <strong>Programming:</strong>
+        C++, Python, R, Assembly
+    </p>
+
+    <p>
+        <strong>Concepts:</strong>
+        Data Structures, Algorithms, Operating Systems,
+        Computer Organization
+    </p>
+
+    <p>
+        <strong>Finance:</strong>
+        Quantitative Research, Alpha Modeling
+    </p>
+
+    <p>
+        <strong>Tools:</strong>
+        Git, Linux, VS Code
+    </p>
+</div>
+
 </body>
 </html>
-
-
